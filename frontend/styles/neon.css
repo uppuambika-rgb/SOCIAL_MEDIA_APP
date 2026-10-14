@@ -1,0 +1,58 @@
+/* NEONVOX Custom Dark Mode & Neon Accent Styles */
+
+:root {
+  --neon-cyan: #00f0ff;
+  --neon-violet: #bd00ff;
+  --neon-emerald: #00ff9d;
+  --neon-pink: #ff007f;
+  --bg-deep: #07090e;
+  --surface-1: #0e121d;
+  --surface-2: #151b2b;
+}
+
+/* Subtle cybernetic backdrop grid */
+.cyber-grid-bg {
+  background-color: var(--bg-deep);
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 240, 255, 0.08), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(189, 0, 255, 0.05), transparent 60%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Neon Box Shadows */
+.neon-glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(0, 240, 255, 0.25);
+}
+
+.neon-glow-violet {
+  box-shadow: 0 0 25px -4px rgba(189, 0, 255, 0.25);
+}
+
+.neon-border-cyan {
+  border-color: rgba(0, 240, 255, 0.4);
+}
+
+.neon-border-violet {
+  border-color: rgba(189, 0, 255, 0.4);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2438;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3754;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "NEONVOX Social",
+  "description": "Next-generation dark mode social network with electric neon accents, real-time posts, comments, follow dynamics, and fullstack MongoDB & Express architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

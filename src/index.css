@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../frontend/styles/neon.css";
+
+@layer base {
+  body {
+    background-color: #07090e;
+    color: #f1f5f9;
+  }
+}
