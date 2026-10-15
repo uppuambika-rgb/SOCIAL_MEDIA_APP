@@ -4,6 +4,8 @@ import path from 'path';
 import { defineConfig, Plugin } from 'vite';
 import { app } from './backend/app';
 
+const rootDir = typeof import.meta.dirname !== 'undefined' ? import.meta.dirname : process.cwd();
+
 function expressApiPlugin(): Plugin {
   return {
     name: 'express-api-plugin',
@@ -18,9 +20,9 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss(), expressApiPlugin()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
-        '@frontend': path.resolve(__dirname, './frontend'),
-        '@backend': path.resolve(__dirname, './backend'),
+        '@': path.resolve(rootDir, '.'),
+        '@frontend': path.resolve(rootDir, './frontend'),
+        '@backend': path.resolve(rootDir, './backend'),
       },
     },
     server: {
